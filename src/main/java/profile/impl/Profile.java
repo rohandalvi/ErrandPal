@@ -25,6 +25,7 @@ public class Profile implements IProfile {
         map.put("id", id);
         map.put("email", email);
         return fb.getFirebase().put("/user/"+ RandomStringUtils.randomAlphabetic(5), map);
+        
 
     }
 
